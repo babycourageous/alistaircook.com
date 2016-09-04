@@ -117,7 +117,7 @@ gulp.task('serve', ['build:dev'], function() {
 	gulp.watch('_posts/**/*.+(md|markdown|MD)', ['build:jekyll:serve']);
 	// WATCH html --> build:jekyll:serve
 	// -- **/*.html, !_site/**/*/*.*
-	gulp.watch(['**/*.html', '!dist/**/*.*'], ['build:jekyll:serve']);
+	gulp.watch(['**/*.html', '!_site/**/*.*'], ['build:jekyll:serve']);
 	// WATCH rss feed --> build:jekyll:serve
 	gulp.watch('feed.xml', ['build:jekyll:serve']);
 	// WATCH _data --> build:jekyll:serve

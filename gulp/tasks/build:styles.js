@@ -21,6 +21,7 @@ module.exports = function(gulp, plugins, config) {
 		}))
 		// postcss & autoprefixer
 	  .pipe(plugins.postcss([
+			plugins.lost(),
 	    plugins.autoprefixer(config.styles.autoprefixer)
 	  ]))
 		.pipe(plugins.cssnano())

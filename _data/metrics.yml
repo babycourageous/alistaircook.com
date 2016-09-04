@@ -1,0 +1,12 @@
+- count: 25
+  name: years experience
+  icon: calendar.svg
+- count: 12
+  name: countries visited
+  icon: world.svg
+- count: 1200
+  name: happy students
+  icon: student.svg
+- count: 232
+  name: workshops taught
+  icon: trust.svg

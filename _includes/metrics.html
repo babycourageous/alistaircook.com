@@ -1,0 +1,14 @@
+<section id="metrics" class="metrics">
+  <h1>Director of Improvisation</h1>
+  <div class="metrics__container">
+    {% for metric in site.data.metrics %}
+
+    <div class="metric">
+      <div class="metric__count">{{metric.count}}</div>
+      <span style="width: 15px; height: 15px; background: #666; font-size: 9px;">{{metric.icon}}</span>
+      <p class="metric__name">{{metric.name}}</p>
+    </div>
+
+    {% endfor %}
+  </div>
+</section>

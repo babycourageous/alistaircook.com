@@ -1,6 +1,5 @@
 module.exports = function(gulp, plugins, config) {
 	return function() {
-		console.log('---> build:styles');
 		/**
 		 * gulp-notify error handler
 		 */
@@ -28,8 +27,10 @@ module.exports = function(gulp, plugins, config) {
 	  .pipe(plugins.rename({ extname: '.min.css' }))
 		// Add the map to modified source.
 	  .pipe(plugins.sourcemaps.write())
-	  // save to jekyll destination directory
+	  // save to jekyll destination directory - for browsersync
 	  .pipe(gulp.dest(config.styles.jekylldest))
+		// save to assets directory - for jekyll build
+		.pipe(gulp.dest(config.styles.appdest))
 	  // inject CSS into browser via browsersync
 	  .pipe(plugins.browsersync.stream());
 	};

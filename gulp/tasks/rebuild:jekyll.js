@@ -7,7 +7,6 @@
 module.exports = function(gulp, plugins, config) {
 
 	return function() {
-		console.log('---> rebuild:jekyll');
 		plugins.browserSync.reload();
 	}
 

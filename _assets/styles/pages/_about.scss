@@ -1,10 +1,10 @@
 .about {
   lost-center: 1024px;
-  lost-align: horizontal;
   text-align: center;
 
   &__blurb {
     lost-column: 8/12;
+    lost-move: 2/12;
   }
 
 }

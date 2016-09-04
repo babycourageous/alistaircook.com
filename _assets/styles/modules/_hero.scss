@@ -1,0 +1,26 @@
+.hero {
+  background: #000 url('../assets/images/hero.jpg') no-repeat center;
+  background-size: contain;
+  background-position: bottom right;
+  height: 100vh;
+  color: white;
+
+  &__intro {
+    position: absolute;
+    top:30%;
+    left: 5%;
+  }
+
+  &__heading {
+    font-size: em(80);
+    margin: 0;
+    padding: 0;
+  }
+
+  &__subheading {
+    font-size: em(18);
+    margin: 0;
+    padding: 0;
+  }
+
+}

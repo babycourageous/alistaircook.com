@@ -1,0 +1,9 @@
+{% assign sorted = (site.data.timeline | sort: 'date') %}
+<div class="timeline">
+{% for item in sorted %}
+  <div class="timeline__date">{{item.date | date: '%B %Y'}}</div>
+  <h3 class="timeline__event">{{item.event}}</h3>
+  <h4 class="timeline__role">{{item.role}}</h4>
+  <p class="timeline__blurb">{{item.blurb}}</p>
+{% endfor %}
+</div>

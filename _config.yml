@@ -1,6 +1,6 @@
 url: "" # the base hostname & protocol for your site
 baseurl: "" # the subpath of your site, e.g. /blog/
 
-title:
+title: Alistair Cook
 exclude: ["_assets", "gulp", ".gitignore", "gulpfile.js", "package.json", "node_modules", "README.md"]
 keep_files: ["assets"]

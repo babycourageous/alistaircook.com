@@ -3,8 +3,9 @@
  */
 @import 'normalize';
 @import 'bourbon';
-@import 'plugins/base/base';
 @import 'neat';
+@import 'plugins/base/base';
+@import "breakpoint";
 
 /*
  * 1- UTILS
@@ -25,8 +26,11 @@
  * 5- MODULES
  */
 @import 'modules/hero';
+@import "modules/timeline";
  /*
  * 6- PAGES
  */
 @import "pages/about";
+@import "pages/corporate";
 @import "pages/metrics";
+@import "pages/recent";

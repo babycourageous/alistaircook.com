@@ -1,0 +1,23 @@
+.blog {
+  lost-center: $site__min-width;
+
+  &__post {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+    @include breakpoint($large) {
+      lost-column:1/3;
+    }
+
+  }
+}
+
+.post {
+  margin-bottom: $base-spacing;
+
+  &__data {
+    padding: $base-spacing;
+  }
+
+}

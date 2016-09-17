@@ -15,8 +15,10 @@
   "dependencies": {
     "bourbon": "^4.2.7",
     "bourbon-neat": "^1.7.4",
+    "breakpoint-sass": "^2.7.0",
     "jquery": "^2.2.3",
-    "normalize.css": "^4.1.1"
+    "normalize.css": "^4.1.1",
+    "scrollreveal": "^3.3.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -33,8 +35,11 @@
     "gulp-postcss": "^6.1.0",
     "gulp-rename": "^1.2.2",
     "gulp-sass": "^2.3.0",
+    "gulp-size": "^2.1.0",
     "gulp-sourcemaps": "^2.0.0-alpha",
     "gulp-svg-sprite": "^1.2.19",
+    "gulp-svg2png": "^2.0.0",
+    "gulp-svgmin": "^1.2.2",
     "gulp-uglify": "^1.5.3",
     "imagemin-pngquant": "^4.2.2",
     "jshint": "^2.9.3",

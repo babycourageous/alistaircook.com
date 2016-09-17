@@ -20,8 +20,9 @@ config.images = {
 };
 
 config.svg = {
-  src: config.assets + 'svg/**/*',
+  src: config.assets + 'svg/**/*.svg',
   jekylldest: config.app + '_includes',
+  fallbackdest: config.app + 'assets/images/png_fallback',
   options: {
     svg: {
       xmlDeclaration: false,
@@ -50,7 +51,8 @@ config.styles = {
     config.assets+'styles',
     config.nodedir+'/normalize.css',
     config.nodedir+'/bourbon/app/assets/stylesheets',
-    config.nodedir +'/bourbon-neat/app/assets/stylesheets'
+    config.nodedir +'/bourbon-neat/app/assets/stylesheets',
+    config.nodedir + '/breakpoint-sass/stylesheets'
   ],
 
 	autoprefixer: {

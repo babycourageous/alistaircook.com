@@ -1,7 +1,40 @@
 .metrics {
-  lost-center: 1024px;
+  lost-center: em(1024);
+  margin-bottom: $base-spacing;
+
+  &__item {
+    font-family: $heading-font-family;
+  }
 }
 
 .metric {
-  lost-column: 1/4;
+  @include breakpoint($medium) {
+    lost-column: 1/4;
+  }
+
+  &__count {
+    font-size: modular-scale(4);
+    color: $blue;
+    display: block;
+  }
+
+  &__info {
+    text-transform: uppercase;
+  }
+
+  &__icon {
+    @include size(15px);
+    position: relative;
+    top: 2px;
+  }
+
+  /* target all icons with attribute wildcard selector that searches for "begins with..." */
+  [class^="metric__icon-"] {
+    @include size(15px);
+    fill: $medium-gray;
+  }
+
+  &__name {
+  }
+
 }

@@ -1,14 +1,20 @@
 <section id="metrics" class="metrics">
-  <h1>Director of Improvisation</h1>
+  <h1 class="metrics__heading">Director of Improvisation</h1>
   <div class="metrics__container">
     {% for metric in site.data.metrics %}
-
-    <div class="metric">
-      <div class="metric__count">{{metric.count}}</div>
-      <span style="width: 15px; height: 15px; background: #666; font-size: 9px;">{{metric.icon}}</span>
-      <p class="metric__name">{{metric.name}}</p>
+    <div class="metrics__item metric">
+      <span class="metric__count">{{metric.count}}</span>
+      <div class="metric__info">
+        <span class="icon metric__icon">
+          <svg xmlns="http://www.w3.org/2000/svg" class="metric__icon-{{metric.icon}}" role="img" aria-labelledby="title">
+            <switch>
+              <use xlink:href="#{{metric.icon}}"></use>
+              <foreignObject><img src="assets/images/png_fallback/{{metric.icon}}.png"></foreignObject>
+          </svg>
+        </span>
+        <span class="metric__name">{{metric.name}}</span>
+      </div>
     </div>
-
     {% endfor %}
   </div>
 </section>

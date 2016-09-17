@@ -1,0 +1,138 @@
+.experience {
+  lost-center: 1024px;
+}
+.timeline {
+  margin: 30px;
+	padding: 0px;
+  width: 90%;
+  position: relative;
+
+  @include breakpoint($large) {
+    width: 100%;
+    margin: 30px auto;
+  }
+
+  &:before {
+    position: absolute;
+		left: 0;
+    top: 0;
+    content:'';
+    width: 4px;
+    height: 100%;
+    background-color: $blue;
+    opacity: 0.2;
+
+    @include breakpoint($large) {
+      left: 50%;
+    }
+	}
+
+/*
+  &__bar {
+    background-color: $blue;
+    content: '';
+    width: 4px;
+    opacity: 0.2;
+    margin-left: -2px;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    height: 100%;
+  }
+
+
+  &__container {
+    lost-utility: clearfix;
+
+    width: 100%;
+    margin: 30px auto;
+	  position: relative;
+    padding: 0 10px;
+	}
+  */
+
+  &__item {
+    position: relative;
+    margin: 0 0 25px;
+    @include clearfix;
+  }
+
+  &__dot {
+    z-index: 90;
+    background-color: $blue;
+    top: 20px;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    margin-left: -2px;
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+
+    @include breakpoint($large){
+      left: 50%;
+    }
+  }
+
+  &__box {
+    float: right;
+    width: 90%;
+    padding: 20px 5%;
+    border-color: $blue;
+    border-width: 5px 0 0 0;
+    border-style: solid;
+    background-color: #fff;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
+
+    @include breakpoint($large) {
+      width: 45%;
+    }
+
+    &--left {
+      @include breakpoint($large) {
+        float: left;
+      }
+    }
+    &--right {
+      @include breakpoint($large) {
+        float: right;
+      }
+    }
+
+  }
+
+  &__date {
+    display: block;
+    color: $blue;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  &__event {
+    color: #414141;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+  }
+
+  &__role {
+    color: #878787;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.1;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  &__blurb {
+    color: #757575;
+  }
+
+}

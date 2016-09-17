@@ -1,5 +1,5 @@
 .metrics {
-  lost-center: em(1024);
+  lost-center: $site__min-width;
   margin-bottom: $base-spacing;
 
   &__item {

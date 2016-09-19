@@ -1,0 +1,30 @@
+.contact {
+  background: $blue;
+  padding: 5%;
+}
+
+.contact-form {
+  lost-center: $site__min-width;
+  lost-utility: clearfix;
+
+  &__container {
+
+    @include breakpoint($medium) {
+      lost-column: 1/2;
+    }
+  }
+
+  &__button {
+    lost-column: 1/2;
+  }
+
+
+}
+
+input {
+  height: 3em;
+}
+
+textarea {
+  height: 9em;
+}

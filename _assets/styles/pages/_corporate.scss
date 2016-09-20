@@ -1,4 +1,5 @@
 .corporate {
+  @extend %section-padding;
   lost-center: $site__min-width;
   text-align: center;
 

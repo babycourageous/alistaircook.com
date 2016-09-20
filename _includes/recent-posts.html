@@ -1,8 +1,8 @@
-<section id="blog" class="blog">
+<section id="latest-posts" class="latest-posts">
   <h1>Latest Posts</h1>
-  <div class="blog__grid">
+  <div class="latest-posts__grid">
     {% for post in site.posts %}
-    <div class="blog__post post">
+    <div class="latest-posts__post post">
       <div class="post__image"><img src="{{post.image}}" alt=""></div>
       <div class="post__data">
         <h2 class="post__title"><a href={{post.url}}>{{post.title}}</a></h2>

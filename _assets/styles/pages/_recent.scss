@@ -1,4 +1,5 @@
-.blog {
+.latest-posts {
+  @extend %section-padding;
   lost-center: $site__min-width;
 
   &__post {

@@ -1,6 +1,18 @@
-.metrics {
-  lost-center: $site__min-width;
+.director {
   margin-bottom: $base-spacing;
+  background: url(../assets/images/metrics.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../assets/images/metrics.jpg) left center no-repeat;
+  background-size: cover;
+  padding: 5em 0;
+
+  &__heading {
+    color: $light-gray;
+  }
+}
+
+.metrics {
+  @extend %section-padding;
+  lost-center: $site__min-width;
 
   &__item {
     font-family: $heading-font-family;
@@ -19,6 +31,7 @@
   }
 
   &__info {
+    color: $light-gray;
     text-transform: uppercase;
   }
 
@@ -31,7 +44,7 @@
   /* target all icons with attribute wildcard selector that searches for "begins with..." */
   [class^="metric__icon-"] {
     @include size(15px);
-    fill: $medium-gray;
+    fill: $light-gray;
   }
 
   &__name {

@@ -1,0 +1,12 @@
+- name: about
+  url: '#about'
+- name: director
+  url: '#metrics'
+- name: corporate
+  url: '#corporate'
+- name: 'experience'
+  url: '#experience'
+- name: blog
+  url: "#latest-posts"
+- name: contact
+  url: "#contact"

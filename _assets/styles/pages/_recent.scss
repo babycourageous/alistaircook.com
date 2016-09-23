@@ -1,6 +1,7 @@
 .latest-posts {
   @extend %section-padding;
   lost-center: $site__min-width;
+  padding-bottom: modular-scale(4);
 
   &__post {
     position: relative;

@@ -2,7 +2,7 @@
   @extend %section-padding;
   lost-center: $site__min-width;
   text-align: center;
-  padding-top: $base-spacing;
+  padding: modular-scale(4) 0;
 
 
   &__blurb {

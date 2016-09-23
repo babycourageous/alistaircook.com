@@ -2,7 +2,7 @@
   background: url(../assets/images/metrics.jpg) center center no-repeat;
   background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../assets/images/metrics.jpg) left center no-repeat;
   background-size: cover;
-  padding: 5em 0;
+  padding: modular-scale(4) 0;
 
   &__heading {
     color: $light-gray;

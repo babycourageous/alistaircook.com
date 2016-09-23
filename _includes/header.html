@@ -1,12 +1,6 @@
 <header role="banner" class="header">
   <div class="header__container">
-    <button type="button" class="button button--hamburger nav__toggle" id="nav-toggle" data-func="open_nav">
-      <span class="button--hamburger__icon-bar"></span>
-      <span class="button--hamburger__icon-bar"></span>
-      <span class="button--hamburger__icon-bar"></span>
-      <span class="button--hamburger__icon-bar"></span>
-      <span class="sr">Toggle navigation</span>
-    </button>
+    <button class="nav__toggle" id="nav-toggle"><span class="icon-hamburger icon-hamburger--htx">Menu</span></button>
     <nav role="navigation" aria-label="primary" class="nav nav--primary">
       <ul id="nav-list" class="nav__list">
         {% for item in site.data.nav %}

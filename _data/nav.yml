@@ -1,7 +1,7 @@
 - name: about
   url: '#about'
 - name: director
-  url: '#metrics'
+  url: '#director'
 - name: corporate
   url: '#corporate'
 - name: 'experience'

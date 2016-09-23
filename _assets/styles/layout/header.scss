@@ -1,20 +1,16 @@
 .header {
   position: fixed;
-  top: 0;
   width: 100%;
   min-width: 320px;
-  height: 50px;
+  height: $navigation-height;
   font-family: $heading-font-family;
   text-transform: uppercase;
-  transition: all 150ms ease 0ms;
-  z-index: 10;
   background-color: #000;
-
+  z-index: 3;
 
   &__container {
     @extend %container;
     @extend %section-padding;
-    position: relative;
-    height: 100%;
+    background: #000;
   }
 }

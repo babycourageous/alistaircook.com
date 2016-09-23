@@ -1,111 +1,121 @@
-nav { height: 100%; }
-
 .nav {
-  //width: 100%;
-  height: 100%;
-  //float: none;
-  @include media ($medium) {
-    position: absolute;
-    right: em(10);
-  }
-
   &__toggle {
-    background: transparent;
-    @include breakpoint($medium) {
+    display: block;
+    position: relative;
+    background: none;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+    text-indent: -9999px;
+    appearance: none;
+    box-shadow: none;
+    border-radius: 0;
+    border: none;
+    cursor: pointer;
+
+    @include size($navigation-height);
+    @include breakpoint($small) {
       display: none;
     }
     &:hover, &:focus {
       background: transparent;
+      outline: none;
     }
   }
 
   &__list {
-    clear: both;
     display: none;
-    margin: 0 auto;
-    overflow: visible;
-    padding: 0;
-    width: 100%;
-    z-index: 9999;
-
-    &.show {
-      display: block;
-    }
-
-    @include breakpoint($medium) {
-      display: inline;
-      margin: 0;
-      padding: 0;
-    }
-
+    z-index: 999;
   }
 
   &__item {
-    position: relative;
-    display: block;
-    height: 100%;
-
-    @include breakpoint($medium) {
-      display: inline-block;
-    }
   }
 
   &__link {
-    color: $light-gray;
-    line-height: 50px;
-    padding-left: 1em;
+    padding: modular-scale(1);
+    display: block;
   }
 
+  &__link--active {
+    color: purple;
+  }
 }
-
-.button--hamburger {
+/*
+ *
+ * Hamburger Icon Button and Animation
+ * from CALL ME NICK
+ *
+ * http://callmenick.com/post/animating-css-only-hamburger-menu-icons
+ *
+ */
+/* HAMBURGER ICON NEUTRAL */
+.icon-hamburger {
+  display: block;
   position: absolute;
-  top: 0;
-  right: 4vw;
-  z-index: 9;
-
-  height: 100%;
-  width: 50px;
-  cursor: pointer;
-  margin: 0;
-  outline: 0;
-  padding: 0;
+  top: 22px;
+  left: 14px;
+  right: 14px;
+  height: 3px;
+  background: white;
 }
 
-.button--hamburger__icon-bar {
+.icon-hamburger::before,
+.icon-hamburger::after {
   position: absolute;
   display: block;
-  width: 6px;
-  height: 6px;
-  border-radius: 6px;
-  margin: auto -4px;
-  left: calc(50% + 1px);
-  top: calc(50% - 3px);
-  background: $light-gray;
-  -webkit-transform-origin: 50% 50%;
-  transform-origin: 50% 50%;
-  -webkit-transition: all 0.25s ease 0ms;
-  transition: all 0.25s ease 0ms;
+  left: 0;
+  width: 100%;
+  height: 3px;
+  background-color: #fff;
+  content: "";
 }
 
-.button--hamburger__icon-bar:nth-of-type(2) {
-    margin-left: -4px;
-}
-.button--hamburger__icon-bar:nth-of-type(3) {
-    margin-left: -16px;
-}
-.button--hamburger__icon-bar:nth-of-type(4) {
-    margin-left: 8px;
+.icon-hamburger::before {
+  top: -8px;
 }
 
-.sr {
-  font-size: 0;
-  line-height: 0;
-  color: transparent;
-  overflow: hidden;
-  width: 0;
-  height: 0;
-  position: absolute;
-  left: -100vw;
-  top: -100vh;
+.icon-hamburger::after {
+  bottom: -8px;
+}
+
+/* HAMBURGER ICON ANIMATED */
+.icon-hamburger--htx {
+  @include transition(background 0s 0.3s);
+}
+
+.icon-hamburger--htx::before,
+.icon-hamburger--htx::after {
+  //transition-duration: 0.3s, 0.3s;
+  //transition-delay: 0.3s, 0s;
+}
+
+.icon-hamburger--htx::before {
+  transition: top .3s .3s, transform .3s 0s;
+}
+
+.icon-hamburger--htx::after {
+  transition: bottom .3s .3s, transform .3s 0s;
+}
+
+/* active state, i.e. menu open */
+.nav__toggle.is-active .icon-hamburger--htx {
+  background: none;
+}
+
+.nav__toggle.is-active .icon-hamburger--htx::before {
+  top: 0;
+  transform: rotate(45deg);
+}
+
+.nav__toggle.is-active .icon-hamburger--htx::after {
+  bottom: 0;
+  transform: rotate(-45deg);
+}
+
+.nav__toggle.is-active .icon-hamburger--htx::before {
+  transition: top .3s 0s, transform .3s 0.3s;
+
+}
+.nav__toggle.is-active .icon-hamburger--htx::after {
+  transition: bottom .3s 0s, transform .3s 0.3s;
 }

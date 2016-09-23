@@ -1,1 +1,12 @@
 @include breakpoint-set('to ems', true);
+
+html {
+  font-size: 100%;
+
+  /*@media (min-width: 55em) {
+    font-size: 135%;
+  }*/
+  @include breakpoint($large) {
+    font-size: 125%;
+  }
+}

@@ -1,9 +1,1 @@
 @include breakpoint-set('to ems', true);
-
-// Breakpoints
-$small: 400px;
-$medium: 600px;
-$large: 750px;
-$xl: 1200px;
-
-$site__min-width: em(1024);

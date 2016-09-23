@@ -2,13 +2,18 @@
   @extend %section-padding;
   lost-center: $site__min-width;
   text-align: center;
-  margin-bottom: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 1.5em;
 
   &__blurb {
     lost-column: 1/1;
-    @include breakpoint($medium) {
+    @include breakpoint($small) {
       lost-column: 8/12;
       lost-move: 2/12;
+    }
+    @include breakpoint($xl) {
+      lost-column: 6/12;
+      lost-move: 3/12;
     }
   }
 

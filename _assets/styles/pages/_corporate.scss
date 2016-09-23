@@ -2,10 +2,12 @@
   @extend %section-padding;
   lost-center: $site__min-width;
   text-align: center;
+  padding-top: $base-spacing;
+
 
   &__blurb {
     lost-column: 1/1;
-    @include breakpoint($medium) {
+    @include breakpoint($small) {
       lost-column: 8/12;
       lost-move: 2/12;
     }

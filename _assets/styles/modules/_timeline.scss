@@ -7,7 +7,7 @@
   width: 90%;
   position: relative;
 
-  @include breakpoint($large) {
+  @include breakpoint($medium) {
     width: 100%;
     margin: 30px auto;
   }
@@ -22,7 +22,7 @@
     background-color: $blue;
     opacity: 0.2;
 
-    @include breakpoint($large) {
+    @include breakpoint($medium) {
       left: 50%;
     }
 	}
@@ -69,7 +69,7 @@
     position: absolute;
     border-radius: 50%;
 
-    @include breakpoint($large){
+    @include breakpoint($medium){
       left: 50%;
     }
   }
@@ -84,17 +84,17 @@
     background-color: #fff;
     box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12), 0 1px 4px rgba(0, 0, 0, 0.24);
 
-    @include breakpoint($large) {
+    @include breakpoint($medium) {
       width: 45%;
     }
 
     &--left {
-      @include breakpoint($large) {
+      @include breakpoint($medium) {
         float: left;
       }
     }
     &--right {
-      @include breakpoint($large) {
+      @include breakpoint($medium) {
         float: right;
       }
     }

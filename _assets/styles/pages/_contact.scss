@@ -9,7 +9,7 @@
 
   &__container {
 
-    @include breakpoint($medium) {
+    @include breakpoint($small) {
       lost-column: 1/2;
     }
   }

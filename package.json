@@ -1,7 +1,7 @@
 {
-  "name": "app",
+  "name": "alistaricook.com",
   "version": "1.0.0",
-  "description": "",
+  "description": "Personal resume/portfolio website for Alistair Cook.",
   "main": "index.js",
   "repository": {
     "type": "git",

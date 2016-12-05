@@ -32,8 +32,9 @@ gulp.task('build:scripts', getTask('build:scripts'));
 gulp.task('build:images', getTask('build:images'));
 gulp.task('build:svg', getTask('build:svg'));
 gulp.task('build:svg2png', getTask('build:svg2png'));
+
 gulp.task('build:jekyll', getTask('build:jekyll'));
-gulp.task('build:jekyll:dev', getTask('build:jekyll'));
+gulp.task('build:jekyll:dev', getTask('build:jekyll:dev'));
 gulp.task('rebuild:jekyll', getTask('rebuild:jekyll'));
 
 /**

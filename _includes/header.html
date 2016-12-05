@@ -1,20 +1,12 @@
-<header role="banner" class="header">
-  <div class="header__container">
-    <button class="nav__toggle" id="nav-toggle"><span class="icon-hamburger icon-hamburger--htx">Menu</span></button>
+<header data-scroll-header role="banner" class="header">
+  <div class="nav__container">
+    <button id="nav-toggle" class="nav__toggle"><span class="icon icon__hamburger icon__hamburger--htx">Menu</span></button>
     <nav role="navigation" aria-label="primary" class="nav nav--primary">
       <ul id="nav-list" class="nav__list">
-        {% for item in site.data.nav %}
-        <li class="nav__item"><a href="{{item.url}}" class="nav__link">{{item.name}}</a></li>
+        {% for navitem in site.data.nav %}
+        <li class="nav__item"><a data-scroll href="{{site.baseurl}}{{navitem.url}}" class="nav__link">{{navitem.name}}</a></li>
         {% endfor %}
       </ul>
     </nav>
   </div>
 </header>
-<!--
-header.navigation
-  div.navigation-wrapper
-    a.navigation-menu-button#js-mobile-menu
-    nav
-      ul.navigation-menu.show#js-navigation-menu
-        li.nav-link
--->

@@ -14,11 +14,11 @@
   "license": "ISC",
   "dependencies": {
     "bourbon": "^4.2.7",
-    "bourbon-neat": "^1.7.4",
     "breakpoint-sass": "^2.7.0",
-    "jquery": "^2.2.3",
-    "normalize.css": "^4.1.1",
-    "scrollreveal": "^3.3.1"
+    "jquery": "^3.1.1",
+    "normalize.css": "^5.0.0",
+    "scrollreveal": "^3.3.1",
+    "typi": "^3.0.0-alpha.1"
   },
   "devDependencies": {
     "autoprefixer": "^6.3.6",
@@ -27,7 +27,7 @@
     "del": "^2.2.0",
     "gulp": "^3.9.1",
     "gulp-cssnano": "^2.1.2",
-    "gulp-imagemin": "^2.4.0",
+    "gulp-imagemin": "^3.1.1",
     "gulp-jshint": "^2.0.0",
     "gulp-load-plugins": "^1.2.2",
     "gulp-notify": "^2.2.0",
@@ -40,8 +40,8 @@
     "gulp-svg-sprite": "^1.2.19",
     "gulp-svg2png": "^2.0.0",
     "gulp-svgmin": "^1.2.2",
-    "gulp-uglify": "^1.5.3",
-    "imagemin-pngquant": "^4.2.2",
+    "gulp-uglify": "^2.0.0",
+    "imagemin-pngquant": "^5.0.0",
     "jshint": "^2.9.3",
     "lost": "^7.1.0",
     "run-sequence": "^1.1.5",

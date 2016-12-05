@@ -3,8 +3,6 @@
  */
 @import 'normalize';
 @import 'bourbon';
-@import 'neat';
-@import 'plugins/base/base';
 @import "breakpoint";
 
 /*
@@ -17,23 +15,16 @@
  /*
  * 3- BASE
  */
+@import 'base/base';
 
 /*
  * 4- LAYOUT
  */
-@import "layout/header";
-@import "layout/nav";
 
 /*
  * 5- MODULES
  */
-@import 'modules/hero';
-@import "modules/timeline";
+
  /*
  * 6- PAGES
  */
-@import "pages/about";
-@import "pages/corporate";
-@import "pages/metrics";
-@import "pages/recent";
-@import "pages/contact";

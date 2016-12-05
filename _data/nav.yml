@@ -4,9 +4,7 @@
   url: '#director'
 - name: corporate
   url: '#corporate'
-- name: 'experience'
-  url: '#experience'
-- name: blog
-  url: "#latest-posts"
+- name: teacher
+  url: '#teacher'
 - name: contact
   url: "#contact"

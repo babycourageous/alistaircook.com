@@ -44,6 +44,7 @@
     "imagemin-pngquant": "^5.0.0",
     "jshint": "^2.9.3",
     "lost": "^7.1.0",
+    "modularscale-sass": "^2.1.1",
     "run-sequence": "^1.1.5",
     "uglify": "^0.1.5",
     "vinyl-buffer": "^1.0.0",

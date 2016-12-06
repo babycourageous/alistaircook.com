@@ -1,5 +1,5 @@
 url: "" # the base hostname & protocol for your site
-baseurl: "alistaircook.com/" # the subpath of your site, e.g. /blog/
+baseurl: "/alistaircook.com" # the subpath of your site, e.g. /blog/
 
 title: Alistair Cook
 subtitle: Improv performer and teacher

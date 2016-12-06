@@ -1,11 +1,10 @@
 .about {
-  @extend %section-padding;
-  lost-center: $site__min-width;
+  @extend %section__padding;
+  @extend %container;
   text-align: center;
-  padding: modular-scale(3) 0;
 
   &__blurb {
-    lost-column: 1/1;
+    /*lost-column: 1/1;
     @include breakpoint($small) {
       lost-column: 8/12;
       lost-move: 2/12;
@@ -13,7 +12,7 @@
     @include breakpoint($xl) {
       lost-column: 6/12;
       lost-move: 3/12;
-    }
+    }*/
   }
 
 }

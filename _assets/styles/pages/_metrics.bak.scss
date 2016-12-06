@@ -1,11 +1,11 @@
 .director {
-  //background: url(../assets/images/metrics.jpg) center center no-repeat;
-  //background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../assets/images/metrics.jpg) left center no-repeat;
-  //background-size: cover;
+  background: url(../assets/images/metrics.jpg) center center no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.6)), url(../assets/images/metrics.jpg) left center no-repeat;
+  background-size: cover;
+  padding: modular-scale(4) 0;
 
   &__heading {
-    color: #000;
-    //margin: 0 0 0;
+    color: $color__gray--light;
   }
 }
 
@@ -19,7 +19,6 @@
 }
 
 .metric {
-  lost-column: 1/2;
   @include breakpoint($small) {
     lost-column: 1/4;
   }
@@ -31,7 +30,7 @@
   }
 
   &__info {
-    color: #000;
+    color: $color__gray--light;
     text-transform: uppercase;
   }
 

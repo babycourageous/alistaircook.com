@@ -9,3 +9,15 @@
 %container {
   lost-center: $site__min-width em(10);
 }
+
+%blurb {
+  lost-column: 1/1;
+  @include respond-to(medium) {
+    lost-column: 8/12;
+    lost-move: 2/12;
+  }
+  @include respond-to(xl) {
+    lost-column: 8/14;
+    lost-move: 3/14;
+  }
+}

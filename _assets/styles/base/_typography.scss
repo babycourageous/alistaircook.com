@@ -26,7 +26,8 @@ $h1-font-map: (
   null: (ms(3), vr(2)),
 );
 $h2-font-map: (
-  null: (ms(2), vr(2)),
+  null: (ms(2), 1.2),
+  small: (ms(2), vr(2)),
 );
 $h3-font-map: (
   null: (ms(1), vr(1.25)),

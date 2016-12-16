@@ -4,15 +4,7 @@
   text-align: center;
 
   &__blurb {
-    /*lost-column: 1/1;
-    @include breakpoint($small) {
-      lost-column: 8/12;
-      lost-move: 2/12;
-    }
-    @include breakpoint($xl) {
-      lost-column: 6/12;
-      lost-move: 3/12;
-    }*/
+    @extend %blurb;
   }
 
 }

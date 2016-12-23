@@ -1,0 +1,20 @@
+.section {
+  @extend %section__padding;
+
+  &--alt {
+    background-color: $color__primary;
+  }
+
+  &__container {
+    @extend %container;
+  }
+
+  &__heading {
+
+    &--alt {
+      color: white;
+      margin-bottom: vr(2);
+    }
+  }
+
+}

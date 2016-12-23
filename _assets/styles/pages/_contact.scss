@@ -1,30 +1,43 @@
-.contact {
-  background: $color__primary;
-  padding: modular-scale(4) 5%;
-}
-
 .contact-form {
-  lost-center: $site__min-width;
-  lost-utility: clearfix;
 
   &__container {
-
-    @include breakpoint($small) {
+    @include respond-to(medium) {
       lost-column: 1/2;
     }
   }
 
-  &__button {
-    lost-column: 1/2;
+  &__input {
+    @extend %input;
+
+    &--text {
+      height: 36px;
+    }
   }
 
+  &__submit {
+    @extend %input;
+    display: inline-block;
+    width: auto;
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid $color__gray--light;
+    color: $color__primary;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: $font__family--alt;
+    float: right;
+  }
 
+  &__message {
+    @extend %input;
+    max-width: 100%;
+  }
 }
 
-input {
-  height: 3em;
-}
 
-textarea {
-  height: 9em;
+::placeholder {
+  color: $color__gray;
+  font-family: $font__family--alt;
+  font-weight: 400;
+  font-size: ms(-1);
 }

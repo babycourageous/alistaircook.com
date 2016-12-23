@@ -1,10 +1,18 @@
-<section id="contact" class="contact">
-  <h2 class="contact__heading">Contact</h2>
-  <form class="contact__form" action="https://formspree.io/your@email.com" method="POST">
-    <input class="contact__input contact__input--text" type="text" name="name" placeholder="Your name...">
-    <input class="contact__input contact__input--text" type="email" name="_replyto" placeholder="Your email...">
-    <input class="contact__input contact__input--text" type="text" name="subject" placeholder="Subject...">
-    <textarea class="contact__message" name="message" cols="30" rows="6" placeholder="Message..." required></textarea>
-    <input class="contact__input contact__input--submit" type="submit" value="Send">
-  </form>
+<section id="contact" class="section section--alt">
+  <div class="section__container">
+    <h2 class="section__heading section__heading--alt">Contact</h2>
+
+    <form class="form contact-form" action="https://formspree.io/your@email.com" method="POST">
+      <div class="contact-form__container">
+        <input class="contact-form__input contact-form__input--text" type="text" name="name" placeholder="Your name...">
+        <input class="contact-form__input contact-form__input--text" type="email" name="_replyto" placeholder="Your email...">
+        <input class="contact-form__input contact-form__input--text" type="text" name="subject" placeholder="Subject...">
+      </div>
+      <div class="contact-form__container">
+        <textarea class="contact-form__message" name="message" cols="30" rows="6" placeholder="Message..." required></textarea>
+      </div>
+      <input class="contact-form__submit" type="submit" value="Send">
+    </form>
+
+  </div>
 </section>

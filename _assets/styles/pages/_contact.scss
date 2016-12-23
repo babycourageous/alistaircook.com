@@ -1,11 +1,9 @@
-.contact {
-  background-color: $color__primary;
-  @extend %section__padding;
-  @extend %container;
+.contact-form {
 
-  &__heading {
-    color: white;
-    margin-bottom: vr(2);
+  &__container {
+    @include respond-to(medium) {
+      lost-column: 1/2;
+    }
   }
 
   &__input {
@@ -14,15 +12,20 @@
     &--text {
       height: 36px;
     }
+  }
 
-    &--submit {
-      background-color: #fff;
-      box-shadow: none;
-      border: 1px solid $color__gray--light;
-      color: $color__primary;
-      font-weight: 700;
-      cursor: pointer;
-    }
+  &__submit {
+    @extend %input;
+    display: inline-block;
+    width: auto;
+    background-color: #fff;
+    box-shadow: none;
+    border: 1px solid $color__gray--light;
+    color: $color__primary;
+    font-weight: 700;
+    cursor: pointer;
+    font-family: $font__family--alt;
+    float: right;
   }
 
   &__message {
@@ -34,4 +37,7 @@
 
 ::placeholder {
   color: $color__gray;
+  font-family: $font__family--alt;
+  font-weight: 400;
+  font-size: ms(-1);
 }

@@ -1,6 +1,6 @@
 {
   "name": "alistaricook.com",
-  "version": "0.3",
+  "version": "0.4",
   "description": "Personal resume/portfolio website for Alistair Cook.",
   "main": "index.js",
   "repository": {

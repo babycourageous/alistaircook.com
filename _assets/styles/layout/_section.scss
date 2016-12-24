@@ -5,6 +5,10 @@
     background-color: $color__primary;
   }
 
+  &--gray {
+    background-color: $color__gray--light;
+  }
+
   &__container {
     @extend %container;
   }

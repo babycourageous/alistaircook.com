@@ -21,3 +21,11 @@ body {
   background-position-y: -8px;
   background-color: $color__gray--light;*/
 }
+
+a {
+  color: $color__primary;
+
+  &:hover {
+    color: $color__primary--dark;
+  }
+}

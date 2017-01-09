@@ -5,5 +5,5 @@ title: Alistair Cook
 subtitle: Improv performer and teacher
 description: Alistair Cook is an improviser from Vancouver, Canada who, over the past 25 years, has had the great opportunity to work with improvisers both young and old, perform and instruct at festivals, and consult and direct for theatre companies across Europe, the USA, Australia, and Canada.
 
-exclude: ["_assets", "gulp", ".gitignore", "gulpfile.js", "package.json", "node_modules", "README.md"]
+exclude: ["_assets", "gulp", ".gitignore", "gulpfile.js", "package.json", "node_modules", "README.md", "Gemfile", "Gemfile.lock"]
 keep_files: ["assets"]

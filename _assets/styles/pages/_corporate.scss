@@ -1,9 +1,0 @@
-.corporate {
-  @extend %section__padding;
-  @extend %container;
-
-  &__blurb {
-    @extend %blurb;
-  }
-
-}

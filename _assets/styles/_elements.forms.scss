@@ -1,0 +1,22 @@
+/* ==========================================================================
+   #FORMS
+   ========================================================================== */
+
+/**
+ * Basic form setup.
+ *
+ */
+
+input {
+  display: block;
+  padding-top: vr(.5);
+  padding-bottom: vr(.5);
+}
+
+// Default placeholder text for inputs
+::placeholder {
+  font-family: $font__family--alt;
+  font-weight: 400;
+  font-size: ms(-1);
+  color: $color__gray;
+}

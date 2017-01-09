@@ -1,0 +1,8 @@
+.o-list {
+  list-style: none;
+
+  &__item {
+    float: left;
+    margin-right: vr(.5);
+  }
+}

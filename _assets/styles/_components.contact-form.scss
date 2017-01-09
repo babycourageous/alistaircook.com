@@ -1,0 +1,18 @@
+.c-contact-form {
+  display: block;
+
+  &__container {
+    @include respond-to(medium) {
+      lost-column: 1/2;
+    }
+  }
+
+  &__item {
+    margin-bottom: vr(1.75);
+  }
+
+  &__submit {
+    float: right;
+  }
+
+}

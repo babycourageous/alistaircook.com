@@ -1,0 +1,29 @@
+.c-metrics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include respond-to(medium) {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  &__item {
+    position: relative;
+    margin-bottom: vr(3);
+    font-family: $font__family--sans;
+
+    @include respond-to(medium) {
+      margin-bottom: 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &:after {
+      @include section-divider($color__gray, 50%, -10px);
+    }
+  }
+
+}

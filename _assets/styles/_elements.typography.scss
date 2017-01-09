@@ -1,0 +1,39 @@
+// Modular Scale
+$ms-base: 1em;
+$ms-ratio: $fourth;
+
+// If you use breakpoint
+$typi-breakpoint: breakpoint;
+
+$typi: (
+  base: (
+    null: (16px, 1.5),
+    small: (18px),
+    medium: (18px),
+    large: (20px),
+    xl: (20px),
+  ),
+  h2: (
+    null: (ms(2), 1.2)
+  )
+  // Other font maps here
+);
+@include typi-init;
+h2 {
+  @include typi('h2');
+  margin-bottom: vr(.5);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font__family--sans;
+  color: $color__gray--dark;
+}
+
+p {
+  margin-bottom: vr(1);
+  color: $color__gray;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}

@@ -1,0 +1,14 @@
+.c-metric  {
+  text-align: center;
+
+  &__count {
+    display: block;
+    font-size: ms(4);
+    font-weight: 400;
+    line-height: vr(2);
+  }
+
+  &__name {
+    display: inline-block;
+  }
+}

@@ -5,7 +5,7 @@
 module.exports = function(gulp, plugins, config) {
 
 	return function(done) {
-		
+
 		var message = {
 			jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 		};

@@ -1,0 +1,18 @@
+// General
+$site__min-width: 1024px;
+$site__padding: em(10);
+
+.l-container {
+  lost-center: $site__min-width $site__padding;
+}
+.l-item {
+  lost-column: 1/1;
+  @include respond-to(medium) {
+    lost-column: 8/12;
+    lost-move: 2/12;
+  }
+  @include respond-to(xl) {
+    lost-column: 8/12;
+    lost-move: 2/12;
+  }
+}

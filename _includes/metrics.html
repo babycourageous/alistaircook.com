@@ -1,10 +1,10 @@
-<section id="metrics" class="section section--gray">
-  <div class="metrics section__container">
+<div id="metrics" class="o-section o-section--gray">
+  <div class="l-container c-metrics">
     {% for metric in site.data.metrics %}
-    <div class="metrics__item metric">
-      <span class="metric__count">{{metric.count}}</span>
-      <span class="metric__name">{{metric.name}}</span>
+    <div class="c-metrics__item c-metric">
+      <span class="c-metric__count">{{metric.count}}</span>
+      <span class="c-metric__name">{{metric.name}}</span>
     </div>
     {% endfor %}
   </div>
-</section>
+</div>

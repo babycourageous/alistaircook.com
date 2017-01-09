@@ -1,43 +1,33 @@
-/*
- * 2- PLUGINS
- */
-@import 'normalize';
+@import "settings.global";
+@import "settings.colors";
+@import "settings.typography";
+@import "settings.transitions";
+@import "settings.breakpoints";
+
+@import "tools.mixins";
 @import 'bourbon';
+
+@import 'normalize';
+@import "generic.reset";
+@import "generic.box-sizing";
 @import 'breakpoint';
-@import 'typi';
 @import 'modular-scale';
-/*
- * 1- UTILS
- */
-@import 'utils/variables';
-@import 'utils/mixins';
-@import 'utils/functions';
+@import "typi";
 
- /*
- * 3- BASE
- */
-@import 'base/base';
-@import 'base/typography';
+@import "elements.page";
+@import "elements.links";
+@import "elements.forms";
+@import "elements.typography";
 
-/*
- * 4- LAYOUT
- */
-@import "layout/section";
-@import 'layout/header';
-@import 'layout/nav';
-@import "layout/footer";
+@import "objects.layout";
+@import "objects.lists";
+@import "objects.sections";
 
-/*
- * 5- MODULES
- */
-@import "modules/hero";
-@import "modules/metrics";
-
- /*
- * 6- PAGES
- */
-@import "pages/about";
-@import "pages/director";
-@import "pages/corporate";
-@import "pages/classroom";
-@import "pages/contact";
+@import "components.icons";
+@import "components.hero";
+@import "components.metric";
+@import "components.metrics";
+@import "components.input";
+@import "components.buttons";
+@import "components.contact-form";
+@import "components.footer";

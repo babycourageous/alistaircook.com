@@ -1,0 +1,16 @@
+.c-button {
+  display: inline-block;
+  width: auto;
+  padding: vr(.25);
+
+  font-size: ms(0);
+  font-weight: 700;
+  font-family: $font__family--alt;
+  color: $color__primary--dark;
+
+  background-color: #fff;
+  border-radius: 5px;
+  border: 2px solid $color__primary--dark;
+
+  cursor: pointer;
+}

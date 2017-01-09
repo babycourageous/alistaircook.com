@@ -1,0 +1,45 @@
+/* MIXINS */
+@mixin section-divider($color, $width:50%, $bottom-padding:0px) {
+  position: absolute;
+  left: 50%;
+  bottom: $bottom-padding;
+
+  width: $width;
+  height: 1px;
+
+  background: $color;
+  content: '';
+  pointer-events: none;
+
+  transform: translateX(-50%);
+}
+
+/* Sass Mixin that generates a Baseline Grid */
+/* by: Mike Morrison, Soholaunch.com */
+/* You don't have to leave this credit comment in, but it would be nice of you. */
+
+// Set your grid dimensions here
+$bline-body-width: 960px;
+$bline-baseline: 12px;
+@mixin baseline-grid {
+	$columns: 16;
+	$column-color: rgba(200,0,0,.2);
+	$baseline-color: rgba(56,255,255,.8);
+
+	// These are all automatically calculated
+	$gutter-width: 20px;  // Change if you like
+	$gutters: ($columns - 1);
+	$column-width: $bline-body-width / $columns;
+
+	background-image: linear-gradient(0deg, $column-color $column-width, transparent $gutter-width),
+                    linear-gradient(top, rgba(0,0,0,0) 95%, $baseline-color 100%);
+	background-size: ($column-width + $gutter-width) 100%, 100% $bline-baseline;
+	background-position: 10px 0px; // Use to offset and center your grid
+}
+
+/*
+ * Example call
+body {
+	@include baseline-grid;
+}
+*/

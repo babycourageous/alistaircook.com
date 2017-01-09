@@ -1,0 +1,150 @@
+.c-input {
+
+	position: relative;
+	display: block;
+
+	&__field {
+		width: 100%;
+		border: 2px solid $color__primary--dark;
+		&:focus,
+		&:active {
+			outline: none;
+		}
+	}
+
+	&__label {
+		position: absolute;
+		top: 50%;
+		left: 5px;
+
+		font-family: $font__family--sans;
+		font-size: ms(-1);
+		font-weight: bold;
+		text-align: left;
+		color: $color__primary--dark;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+
+		-webkit-touch-callout: none;
+		user-select: none;
+
+		pointer-events: none;
+		transform: translateY(-50%);
+		transition: all 0.25s ;
+		transition-timing-function: ease-in-out;
+
+		&--textarea {
+			top: 10%;
+			//transform: translateY(0%);
+		}
+
+	}
+}
+.c-input__field:focus + .c-input__label,
+.c-input.is-filled .c-input__label {
+  top: -10px;
+  color: $color__gray--light;
+}
+	/*
+	position: relative;
+	z-index: 1;
+
+	display: inline-block;
+  width: 100%;
+
+	vertical-align: top;
+
+  &__field {
+	  background: none
+	  border: solid 2px #21a1e1
+	  color: #21a1e1
+	  //padding: 15px 40px
+	  font-size: 18px
+	  display: inline-block
+
+	  &:focus,
+	  &:active
+	    outline: none
+
+
+  	position: relative;
+
+  	display: block;
+    float: right;
+    width: 100%;
+    padding: 0.8em;
+
+  	font-size: ms(-1);
+		font-weight: 400;
+    color: #aaa;
+
+    background-color: $color__primary--light;
+    border: 2px solid transparent;
+  	border-radius: 0;
+
+    transition: background-color 0.25s, border-color 0.25s;
+  	-webkit-appearance: none; /* for box shadows to show on iOS */
+/*
+    &:focus {
+    	outline: none;
+    }
+  }
+
+  &__label {
+    position: absolute;
+    bottom: 100%;
+
+    display: inline-block;
+  	float: right;
+    width: 100%;
+    overflow: hidden;
+
+    font-family: $font__family--sans;
+  	font-size: ms(-1);
+    font-weight: bold;
+    text-align: left;
+    color: $color__primary--dark;
+  	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+
+    -webkit-touch-callout: none;
+  	user-select: none;
+
+    pointer-events: none;
+    transform: translate3d(0, 3em, 0);
+    transition: transform 0.25s ;
+    transition-timing-function: ease-in-out;
+
+  }
+
+  &__label-content {
+  	position: relative;
+
+  	display: block;
+  	width: 100%;
+    padding: 0.25em 0;
+
+    color: $color__primary--dark;
+
+    transition: transform 0.25s;
+    transition-timing-function: ease-in-out;
+
+    &:after {
+      position: absolute;
+      bottom: 100%;
+      left: 0;
+
+      padding: 0.25em 0;
+      width: 100%;
+      height: 100%;
+
+
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: $color__gray--light;
+      content: attr(data-content);
+    }
+  }
+}
+*/

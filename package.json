@@ -1,6 +1,6 @@
 {
   "name": "alistaricook.com",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Personal resume/portfolio website for Alistair Cook.",
   "main": "index.js",
   "repository": {
@@ -16,6 +16,8 @@
     "bourbon": "^4.2.7",
     "breakpoint-sass": "^2.7.1",
     "jquery": "^3.1.1",
+    "jquery-validation": "^1.16.0",
+    "magnific-popup": "^1.1.0",
     "normalize.css": "^5.0.0",
     "scrollreveal": "^3.3.2",
     "typi": "^3.0.0-alpha.1"

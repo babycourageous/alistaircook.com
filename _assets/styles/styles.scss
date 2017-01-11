@@ -13,6 +13,7 @@
 @import 'breakpoint';
 @import 'modular-scale';
 @import "typi";
+@import "main"; // magnific popup styles
 
 @import "elements.page";
 @import "elements.links";
@@ -29,5 +30,7 @@
 @import "components.metrics";
 @import "components.input";
 @import "components.buttons";
-@import "components.contact-form";
+//@import "components.contact-form";
+//@import "components.contact-popup";
+@import "components.contact";
 @import "components.footer";

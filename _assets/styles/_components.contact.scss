@@ -1,0 +1,28 @@
+.contact {
+
+  text-align: center;
+
+  &__blurb {
+    color: $color__gray--light;
+  }
+
+  &__link {
+    padding: vr(.5);
+
+    background-color: $color__primary--dark;
+    border: transparent;
+
+    font-family: $font__family--sans;
+    color: $color__gray--light;
+    text-decoration: none;
+
+    transition: all .25s ease-in-out;
+
+    &:hover {
+      background-color: $color__gray--light;
+      color: $color__primary--dark;
+      border: 1px solid $color__primary--dark;
+    }
+  }
+
+}

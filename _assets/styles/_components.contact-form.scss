@@ -7,6 +7,19 @@
     }
   }
 
+  &__errors {
+    display: none;
+    margin-bottom: 2em;
+    padding: 10px;
+
+    color: red;
+
+    background-color: #fff;
+    border: 2px solid $color__primary--dark;
+
+    list-style: none;
+  }
+
   &__item {
     margin-bottom: vr(1.75);
   }

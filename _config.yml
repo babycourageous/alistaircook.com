@@ -1,9 +1,23 @@
-url: "" # the base hostname & protocol for your site
-baseurl: "/alistaircook.com" # the subpath of your site, e.g. /blog/
+url: "http://alistaircook.ca" # the base hostname & protocol for your site
+baseurl: "" # the subpath of your site, e.g. /blog/
 
-title: Alistair Cook
-subtitle: Improv performer and teacher
-description: Alistair Cook is an improviser from Vancouver, Canada who, over the past 25 years, has had the great opportunity to work with improvisers both young and old, perform and instruct at festivals, and consult and direct for theatre companies across Europe, the USA, Australia, and Canada.
+title: Alistair Cook #- Improviser and Instructor in Vancouver, BC
+subtitle: Improviser and Instructor
+description: An improviser and instructor from Vancouver, BC with over 25 years experience. Alistair has had the great opportunity to work with improvisers both young and old, perform and instruct at festivals, and consult and direct for theatre companies across Europe, the USA, Australia, and Canada.
+logo: assets/images/logo.png
 
 exclude: ["_assets", "gulp", ".gitignore", "gulpfile.js", "package.json", "node_modules", "README.md", "Gemfile", "Gemfile.lock"]
 keep_files: ["assets"]
+
+social:
+  name: Alistair Cook
+  links:
+    - https://www.facebook.com/alistair.cook.9678
+    - https://twitter.com/alistairdcook
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: "assets/images/alistair-cook.jpg"
